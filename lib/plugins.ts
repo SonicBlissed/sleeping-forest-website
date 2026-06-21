@@ -9,7 +9,7 @@ export const plugins: Plugin[] = [
     name: "SFRoles",
     tagline: "The role hierarchy that everything else hangs off of",
     description:
-      "Five-tier role system (Initiate → Member → Chat Moderator → Moderator → Admin) with the moderation toolkit attached: /role, /kick, /ban, /mute, /unmute. Every other plugin checks these roles before letting you do anything sensitive.",
+      "Four-tier role system (Member → Chat Moderator → Moderator → Admin). New players join as Member — no verification step. Ships with the moderation toolkit: /role, /kick, /ban, /mute, /unmute. Every other plugin checks these roles before letting you do anything sensitive.",
   },
   {
     name: "SFChat",

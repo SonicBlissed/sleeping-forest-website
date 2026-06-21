@@ -9,6 +9,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { JoinCTA } from "@/components/JoinCTA";
+import { DiscordCTA } from "@/components/DiscordCTA";
 
 const features = [
   {
@@ -71,8 +72,9 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 space-y-4">
           <JoinCTA />
+          <DiscordCTA />
         </div>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
