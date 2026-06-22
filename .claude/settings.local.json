@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C c:/Users/mimir/projects/minecraft/website rev-parse --show-toplevel)",
+      "Bash(git -C c:/Users/mimir/projects/minecraft/website ls-files)",
+      "Bash(ls c:/Users/mimir/projects/minecraft/patch-notes/)",
+      "Read(//c/Users/mimir/projects/minecraft/patch-notes/**)",
+      "Bash(mv c:/Users/mimir/projects/minecraft/patch-notes/*.md c:/Users/mimir/projects/minecraft/website/patch-notes/)",
+      "Bash(rmdir c:/Users/mimir/projects/minecraft/patch-notes)"
+    ]
+  }
+}

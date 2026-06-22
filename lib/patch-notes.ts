@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const PATCH_NOTES_DIR = path.join(process.cwd(), "..", "patch-notes");
+const PATCH_NOTES_DIR = path.join(process.cwd(), "patch-notes");
 
 export type PatchNote = {
   /** Date string in YYYY-MM-DD format, also used as the URL slug. */
