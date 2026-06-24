@@ -68,6 +68,11 @@ export const commandGroups: CommandGroup[] = [
         plugin: "SFClans",
       },
       {
+        usage: "/clan unclaim",
+        description: "Release all of your clan's claimed land. (Leader)",
+        plugin: "SFClans",
+      },
+      {
         usage: "/clan setspawn",
         description: "Set the clan spawn point at your current location. (Manager+)",
         plugin: "SFClans",
@@ -117,34 +122,60 @@ export const commandGroups: CommandGroup[] = [
         plugin: "SFRpg",
       },
       {
+        usage: "/skills top",
+        description: "Server-wide leaderboard of combined skill levels.",
+        plugin: "SFRpg",
+      },
+      {
         usage: "/mining",
-        description: "Show details, level, and ability info for Mining.",
+        description: "Show details, level, and ability info for Mining. Add 'top' for the Mining leaderboard.",
         plugin: "SFRpg",
       },
       {
         usage: "/digging",
-        description: "Show details, level, and ability info for Digging.",
+        description: "Show details, level, and ability info for Digging. Add 'top' for the Digging leaderboard.",
         plugin: "SFRpg",
       },
       {
         usage: "/logging",
-        description: "Show details, level, and ability info for Logging.",
+        description: "Show details, level, and ability info for Logging. Add 'top' for the Logging leaderboard.",
         plugin: "SFRpg",
       },
       {
         usage: "/gardening",
-        description: "Show details, level, and ability info for Gardening.",
+        description: "Show details, level, and ability info for Gardening. Add 'top' for the Gardening leaderboard.",
         plugin: "SFRpg",
       },
       {
         usage: "/hunting",
-        description: "Show details, level, and ability info for Hunting.",
+        description: "Show details, level, and ability info for Hunting. Add 'top' for the Hunting leaderboard.",
         plugin: "SFRpg",
       },
       {
         usage: "/fishing",
-        description: "Show details, level, and ability info for Fishing.",
+        description: "Show details, level, and ability info for Fishing. Add 'top' for the Fishing leaderboard.",
         plugin: "SFRpg",
+      },
+    ],
+  },
+  {
+    plugin: "Ranks",
+    blurb: "Earned ranks driven by your total skill levels.",
+    commands: [
+      {
+        usage: "/rank",
+        description: "Show your current rank, progress to the next, and your current perks.",
+        plugin: "SFRanks",
+      },
+      {
+        usage: "/rank <player>",
+        description: "Look up another player's rank.",
+        plugin: "SFRanks",
+      },
+      {
+        usage: "/rank ladder",
+        description: "Show the full rank ladder with thresholds and perks at each tier.",
+        plugin: "SFRanks",
       },
     ],
   },
@@ -189,6 +220,16 @@ export const commandGroups: CommandGroup[] = [
         plugin: "SFTeleport",
       },
       {
+        usage: "/tp accept",
+        description: "Accept an incoming teleport request.",
+        plugin: "SFTeleport",
+      },
+      {
+        usage: "/tp decline",
+        description: "Decline an incoming teleport request.",
+        plugin: "SFTeleport",
+      },
+      {
         usage: "/back",
         description: "Return to where you were before your last teleport, or to where you last died.",
         plugin: "SFTeleport",
@@ -225,6 +266,11 @@ export const commandGroups: CommandGroup[] = [
         description: "List every public warp on the server.",
         plugin: "SFWarp",
       },
+      {
+        usage: "/removewarp <name>",
+        description: "Remove one of your own warps.",
+        plugin: "SFWarp",
+      },
     ],
   },
   {
@@ -233,7 +279,12 @@ export const commandGroups: CommandGroup[] = [
     commands: [
       {
         usage: "/shop",
-        description: "Teleport to the admin shop area.",
+        description: "Open the shop GUI to browse, buy, and sell items by category. Recent purchases band lets you re-buy in one click.",
+        plugin: "SFShop",
+      },
+      {
+        usage: "/sell",
+        description: "Instantly sell every plain item in your inventory matching a Sell sign. Custom-named, enchanted, books, and spawners are never auto-sold.",
         plugin: "SFShop",
       },
     ],
@@ -259,6 +310,11 @@ export const commandGroups: CommandGroup[] = [
           "Open the titles GUI to pick a personal display title (unlocked via RPG skills).",
         plugin: "SFChat",
       },
+      {
+        usage: "/chat color",
+        description: "Open the dye-picker GUI to choose your chat color.",
+        plugin: "SFChat",
+      },
     ],
   },
   {
@@ -280,6 +336,48 @@ export const commandGroups: CommandGroup[] = [
         usage: "/voteday no",
         description: "Vote no on an active /voteday.",
         plugin: "SFVoteDay",
+      },
+    ],
+  },
+  {
+    plugin: "Server Links",
+    blurb: "Quick links to off-server resources.",
+    commands: [
+      {
+        usage: "/website",
+        description: "Show yourself a clickable link to the Sleeping Forest website. Alias: /site.",
+        plugin: "SFChat",
+      },
+      {
+        usage: "/discord",
+        description: "Show yourself a clickable link to the Sleeping Forest Discord.",
+        plugin: "SFChat",
+      },
+      {
+        usage: "/vote",
+        description: "Show yourself a clickable link to vote for Sleeping Forest on Planet Minecraft.",
+        plugin: "SFChat",
+      },
+    ],
+  },
+  {
+    plugin: "Utilities",
+    blurb: "Small quality-of-life commands.",
+    commands: [
+      {
+        usage: "/ping",
+        description: "Show your current latency in milliseconds, color-coded by quality.",
+        plugin: "SFRoles",
+      },
+      {
+        usage: "/sort",
+        description: "Sort your main inventory alphabetically (hotbar and armor untouched).",
+        plugin: "SFSort",
+      },
+      {
+        usage: "/toggle sort",
+        description: "Toggle the in-GUI 'Sort' button for chests and your inventory on or off.",
+        plugin: "SFSort",
       },
     ],
   },
